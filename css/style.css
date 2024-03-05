@@ -3,8 +3,128 @@
     margin:0;
     padding:0;
     font-family: sans-serif;
+    list-style: none;
 
 }
 body{
     background: var(--color-primary);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 8px;
+    grid-template-areas: 
+    "menu menu menu menu menu menu menu menu menu menu menu menu"  
+    "notification notification notification notification sales sales sales sales sales sales balance balance"
+    "notification notification notification notification sales sales sales sales sales sales balance balance"
+    "week week week week sales sales sales sales sales sales balance balance"
+    "week week week week sales sales sales sales sales sales devs devs"
+    "week week week week sales sales sales sales sales sales devs devs"
+    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+        
+        ;
+
+    width: 800px;
+    height: 600px;
+    margin: 15px auto;
+    background: var(--color-secundary);
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    box-shadow: var(--color-shadow);
+
+
+}
+.container div{
+    border-radius: 5px;
+}
+.item_1{
+    background: #ffffff;
+    grid-area: menu;
+    display: flex;
+}
+.nav{
+    width: 50%;
+
+}
+.van{
+    width: 50%;
+    display: flex;
+    background: linear-gradient(to right, #3498db 0%, #3498db 50%, #2ecc71 50%, #2ecc71 100%);
+    /* El degradado va de celeste (#3498db) a la mitad y luego cambia a verde (#2ecc71) */
+    padding: 10px; /* Ajusta el espacio interno según sea necesario */
+}
+
+
+.item_1  div ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.icons{
+    padding: 5px ;
+    display: flex;
+}
+.icons i {
+    font-size: 20px; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio entre los iconos (ajusta según sea necesario) */
+    font-size: 24px; /* Tamaño del icono */
+
+}
+.user h5, h6{
+    display: flex;
+    justify-content: center;
+    align-items:; 
+    flex-direction: column;
+
+}
+.user{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.face{
+    
+    height: 50px;
+}
+.item_2{
+    background: #33ff00;
+    grid-area: notification;
+}
+.item_3{
+    background: #001eff;
+    grid-area: sales;
+}
+.item_4{
+    background: #f6ff00;
+    grid-area: week;
+}
+.item_5{
+    background: hsl(310, 100%, 50%);
+    grid-area: balance;
+}
+.item_6{
+    background: #00ffc3;
+    grid-area: devs;
+}
+.item_7{
+    background: #bf00ff;
+    grid-area: product;
+}
+.item_8{
+    background: #ffb300;
+    grid-area: timeline;
+}
+
+
+
+@media (width < 600px){
+    .container{
+        width: 100%;
+        margin: 0;
+        height: 100vh;
+        background: red;
+    }
 }
