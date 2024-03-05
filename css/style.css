@@ -30,7 +30,7 @@ body{
     width: 800px;
     height: 600px;
     margin: 15px auto;
-    background: var(--color-secundary);
+    background: var(--color-primary);
     border: 1px solid var(--color-primary);
     border-radius: 5px;
     box-shadow: var(--color-shadow);
@@ -38,7 +38,7 @@ body{
 
 }
 .container div{
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .item_1{
     background: #ffffff;
@@ -112,13 +112,40 @@ body{
 .item_2{
     background: #87D8F9;
     grid-area: notification;
+
 }
+.pictures{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    
+}
+.fac1{
+    float: left;
+    margin-left: 10px;
+    height: 50px;
+}
+.fac2{
+    float: left;
+    margin-left: 10px;
+    height: 50px;
+}
+.fac3{
+    float: left;
+    margin-left: 10px;
+    height: 50px;
+}
+
+
+/**/
 .item_3{
-    background: #001eff;
+    background: hsl(0, 0%, 100%);
     grid-area: sales;
 }
 .item_4{
-    background: #f6ff00;
+    background: hwb(0 100% 0%);
     grid-area: week;
 }
 .item_5{
@@ -130,11 +157,11 @@ body{
     grid-area: devs;
 }
 .item_7{
-    background: #bf00ff;
+    background: hsl(0, 0%, 100%);
     grid-area: product;
 }
 .item_8{
-    background: #ffb300;
+    background: hsl(0, 0%, 100%);
     grid-area: timeline;
 }
 
@@ -145,6 +172,6 @@ body{
         width: 100%;
         margin: 0;
         height: 100vh;
-        background: red;
+        background: #EFEFEF;
     }
 }
