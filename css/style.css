@@ -47,50 +47,70 @@ body{
 }
 .nav{
     width: 50%;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
 }
+.nav ul li{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+.item_1  div ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
 .van{
+    
     width: 50%;
     display: flex;
-    background: linear-gradient(to right, #3498db 0%, #3498db 50%, #2ecc71 50%, #2ecc71 100%);
+    background: linear-gradient(to right, #3498db 0%, #8DD9F1 50%, #D7F065 50%, #2ecc71 100%);
     /* El degradado va de celeste (#3498db) a la mitad y luego cambia a verde (#2ecc71) */
     padding: 10px; /* Ajusta el espacio interno según sea necesario */
 }
 
 
-.item_1  div ul {
-    display: flex;
-    justify-content: space-evenly;
 
-}
+
 .icons{
     padding: 5px ;
     display: flex;
+    align-items: center;
 }
 .icons i {
     font-size: 20px; /* Tamaño del icono */
     margin-right: 10px; /* Espacio entre los iconos (ajusta según sea necesario) */
     font-size: 24px; /* Tamaño del icono */
+    
 
 }
-.user h5, h6{
-    display: flex;
-    justify-content: center;
-    align-items:; 
-    flex-direction: column;
-
+.text{
+    float: right;
+    margin-left: 130px;
+    padding-top: 10px;
 }
+.face{
+    float: right;
+    margin-left: 10px;
+    height: 50px;
+}
+
+
 .user{
     display: flex;
     justify-content: flex-end;
 
 }
-.face{
-    
-    height: 50px;
-}
+
+/*EMPEZANDO EL SEGUNDO CUADRO DE INFORMACION*/
 .item_2{
-    background: #33ff00;
+    background: #87D8F9;
     grid-area: notification;
 }
 .item_3{
@@ -102,11 +122,11 @@ body{
     grid-area: week;
 }
 .item_5{
-    background: hsl(310, 100%, 50%);
+    background: #FEFEFE;
     grid-area: balance;
 }
 .item_6{
-    background: #00ffc3;
+    background: #D7F065;
     grid-area: devs;
 }
 .item_7{
