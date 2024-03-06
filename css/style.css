@@ -134,6 +134,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .div1Item2{
@@ -166,6 +167,8 @@ body{
     justify-content: center;
     width: 32px;
     height: 32px;
+    color: white;
+    font-size: 15px;
 }
 
 
@@ -186,17 +189,28 @@ body{
 
 .circleRightItem2{
     background: rgb(0, 0, 0);
-    height: 32%;
-    width: 45%;
-    border-radius: 100px;
+    height: 100%;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    position: relative;
+    left: 60%;
+    bottom: -23%;
+    
 }
+
 
 .circleRightItem2 > p{
     font-weight: 700;
     color: var(--color-secundary);
+    display: flex;
+    justify-content:  right;
 }
 .fac3{
     float: left;
@@ -210,12 +224,64 @@ body{
     background: hsl(0, 0%, 100%);
     grid-area: sales;
 }
+
+
+
+
+/**/
 .item_4{
     background: hwb(0 100% 0%);
     grid-area: week;
+    padding: 20px;
 }
 .item_4 p{
     font-size: 13px;
+}
+.revenue{
+
+    line-height: 1.4;
+}
+
+.icons2  {
+    display: flex;
+    justify-content: end;
+    top: 0px;
+   
+    align-items: end;
+    position: relative;
+    left: 25%;
+
+    
+}
+.diagrama1{
+    font-size: 1px;
+    position: relative;
+    top: -25px;
+    background-color: #8CD8F9;
+    border-radius: 50%;
+    
+}
+.diagrama12{
+    font-size: small;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -25px;
+    background-color: #D7F065;
+    border-radius: 50%;
+}
+
+.diagrama{
+    position:relative;
+    left: -20px;
+    top: 20px
+}
+.money{
+    display: flex;
+    
+    
+
+
 }
 
 .item_5{
@@ -250,7 +316,7 @@ body{
     background: hsl(0, 0%, 100%);
     grid-area: timeline;
 }
-.diagrama{
+.diagramafinal{
     height: 100%;
 }
 
