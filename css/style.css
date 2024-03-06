@@ -54,11 +54,19 @@ body{
     
     
 }
-.nav ul li{
+.nav ul li {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     text-decoration: none;
+    
+}
+.nav ul li a{
+    display: flex;
+    justify-content: space-around;
+    padding: 6px;
+    text-decoration: none;
+    
     
 }
 .item_1  div ul {
