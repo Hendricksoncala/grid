@@ -147,6 +147,10 @@ body{
 .imgItem2{
     display: flex;
     align-items: center;
+    font-size: 35px;
+}
+.imgItem2 i{
+    font-size: 35px;
 }
 
 .imgItem2 > *{
@@ -156,16 +160,15 @@ body{
 .circleItem2{
     background: rgb(0, 0, 0);
     height: 100%;
-    border-radius: 10px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 32px;
+    height: 32px;
 }
 
-.circleItem2 > p{
-    font-weight: 700;
-    color: var(--color-secundary);
-}
+
 
 .div2Item2{
     height: 80%;
@@ -184,6 +187,7 @@ body{
 .circleRightItem2{
     background: rgb(0, 0, 0);
     height: 32%;
+    width: 45%;
     border-radius: 100px;
     display: flex;
     align-items: center;
