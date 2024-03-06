@@ -53,6 +53,7 @@ body{
     text-decoration: none;
     
     
+    
 }
 .nav ul li {
     display: flex;
@@ -60,14 +61,29 @@ body{
     padding: 10px;
     text-decoration: none;
     
+    
+    
 }
 .nav ul li a{
     display: flex;
     justify-content: space-around;
     padding: 6px;
     text-decoration: none;
+    color: black
     
     
+}
+.nav ul li input{
+    border-radius: 6px;
+    height: 35px;
+}
+.nav ul  .search2{
+    position: relative;
+}
+.nav ul li .lupa{
+    position: absolute;
+    right: 15px;
+    top:11px
 }
 .item_1  div ul {
     display: flex;
