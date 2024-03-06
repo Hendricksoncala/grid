@@ -70,7 +70,7 @@ body{
     
     width: 50%;
     display: flex;
-    background: linear-gradient(to right, #3498db 0%, #8DD9F1 50%, #D7F065 50%, #2ecc71 100%);
+    background: linear-gradient(to right ,#8CD8F9, #D7F065);
     /* El degradado va de celeste (#3498db) a la mitad y luego cambia a verde (#2ecc71) */
     padding: 10px; /* Ajusta el espacio interno según sea necesario */
 }
@@ -127,10 +127,72 @@ body{
     margin-left: 10px;
     height: 50px;
 }
-.fac2{
-    float: left;
-    margin-left: 10px;
-    height: 50px;
+.item2 {
+    background: rgb(135, 216, 249);
+    grid-area: notification;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div1Item2{
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.imgItem2{
+    display: flex;
+    align-items: center;
+}
+
+.imgItem2 > *{
+    width: 15%;
+}
+
+.circleItem2{
+    background: rgb(0, 0, 0);
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleItem2 > p{
+    font-weight: 700;
+    color: var(--color-secundary);
+}
+
+.div2Item2{
+    height: 80%;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5%
+}
+
+.div2Item2 > i{
+    display: flex;
+    align-self: flex-end;
+}
+
+.circleRightItem2{
+    background: rgb(0, 0, 0);
+    height: 32%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleRightItem2 > p{
+    font-weight: 700;
+    color: var(--color-secundary);
 }
 .fac3{
     float: left;
@@ -148,10 +210,30 @@ body{
     background: hwb(0 100% 0%);
     grid-area: week;
 }
+.item_4 p{
+    font-size: 13px;
+}
+
 .item_5{
-    background: #FEFEFE;
+    background: var(--color-secundary);
     grid-area: balance;
 }
+
+.item_5 div{
+    margin: 6px;
+    height: 27%;
+}
+
+.item_5 .caja_2{
+    padding: 10px;
+    background: #AEF7AE;
+    box-shadow: var(--color-shadows) 
+}
+
+.item_5 p{
+    font-size: 10px;
+}
+
 .item_6{
     background: #D7F065;
     grid-area: devs;
@@ -163,6 +245,9 @@ body{
 .item_8{
     background: hsl(0, 0%, 100%);
     grid-area: timeline;
+}
+.diagrama{
+    height: 100%;
 }
 
 
